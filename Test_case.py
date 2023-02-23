@@ -46,5 +46,10 @@ class TestDataAnalysis(unittest.TestCase):
         self.assertIsNone(self.da.display_total_visitors())
 
 
+        da = DataAnalysis(self.path_to_datafile,self.year_range, self.included_countries)
+        da.parse_data()
+        da.display_processed_data()
+        da.display_total_visitors()
+
 if __name__ == '__main__':
     unittest.main()
