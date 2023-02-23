@@ -53,8 +53,5 @@ class DataAnalysis:
         plt.xlabel('Countries')
         plt.show()
 
-        da = DataAnalysis(path_to_datafile, year_range, included_countries)
-        da.parse_data()
-        da.display_processed_data()
-        da.display_total_visitors()
+
 
