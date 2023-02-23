@@ -53,24 +53,8 @@ class DataAnalysis:
         plt.xlabel('Countries')
         plt.show()
 
-
-def TestCase():
-    # Test Case:
-    path_to_datafile = 'C:/Users/gmdhu/PycharmProjects/PY_Project/Project_File.xlsx'  # Specify path to project_file
-    year_range = [1978, 1987]  # Specify the assigned year range
-    included_countries = [' Brunei Darussalam ', ' Indonesia ', ' Malaysia ',
-                          ' Philippines ', ' Thailand ', ' Viet Nam ', ' Myanmar ', ' Japan ',
-                          ' Hong Kong ', ' China ', ' Taiwan ', ' Korea, Republic Of ', ' India ',
-                          ' Pakistan ', ' Sri Lanka ', ' Saudi Arabia ', ' Kuwait ', ' UAE ']  # Specify the countries in the region that
-
-    da = DataAnalysis(path_to_datafile, year_range, included_countries)
-    da.parse_data()
-    da.display_processed_data()
-    da.display_total_visitors()
-
-    print(da.get_top_3_countries())
-
-
-if __name__ == '__main__':
-    TestCase()
+        da = DataAnalysis(path_to_datafile, year_range, included_countries)
+        da.parse_data()
+        da.display_processed_data()
+        da.display_total_visitors()
 
