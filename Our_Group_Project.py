@@ -72,7 +72,6 @@ def TestCase():
 
     print(da.top_3_countries())
 
-
+     
 if __name__ == '__main__':
     TestCase()
-
