@@ -75,4 +75,5 @@ if __name__ == '__main__':
    DA.display_processed_data() # Display the processed data
    DA.display_total_visitors() # Display the BarChart of top 3 countries with most visitors in the asia region
 
+#latest commit
 
